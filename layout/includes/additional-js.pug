@@ -18,7 +18,7 @@ div
     script(src=url_for(theme.CDN.snackbar))
 
   if theme.pangu.enable
-    !=partial('includes/third-party/pangu.pug', {}, {cache: true})
+    !=partial('includes/third-party/pangu.pug', {}, {cache: false})
 
   //- search
   if theme.algolia_search.enable
@@ -54,7 +54,9 @@ div
   !=partial('includes/third-party/effect', {}, {cache: true})
 
   !=partial('includes/third-party/chat/index', {}, {cache: true})
-  
+
+  !=partial('includes/post/post-cover-js', {}, {cache: false})
+
   if theme.aplayerInject && theme.aplayerInject.enable
     if theme.pjax.enable || theme.aplayerInject.per_page
       include ./third-party/aplayer.pug

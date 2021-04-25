@@ -1,0 +1,11 @@
+
+
+
+script.
+  var coverHander = {
+    changeCover: () => {
+        document.getElementById('web_bg').style.backgroundImage = document.getElementById('page-header').style.backgroundImage
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', coverHander.changeCover)

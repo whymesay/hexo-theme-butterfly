@@ -64,6 +64,7 @@ script.
 
     typeof chatBtnFn === 'function' && chatBtnFn()
     typeof panguInit === 'function' && panguInit()
+    typeof coverHander === 'object' && coverHander.changeCover()
 
     // google analytics
     typeof gtag === 'function' && gtag('config', '!{theme.google_analytics}', {'page_path': window.location.pathname});
